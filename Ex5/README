@@ -1,0 +1,54 @@
+galb1997, avi.kfir
+Gal Bronstein (318167632), Avraham Kfir (318251519)
+EX: 5
+
+FILES:
+Makefile - your makefile should generate two executable files named: 
+container and sockets when
+            running 'make' with no arguments.
+README file - The README should be structured according to the course guidelines.
+container.cpp - executable that constructs a container and runs a program within the
+                container.
+sockets.cpp - executable which based on command line arguments will run either a client or
+              server at a port given at the command line argument.
+
+ANSWERS:
+
+1. One general use of Linux pid namespaces is to provide a new independent 
+   set of process IDs. The first new process with this namespaces will be with PID 1.
+   (CLONE_NEWPID).
+
+2. Creating a separate mount namespace allows each of these isolated processes to
+   have a completely different view of the entire system's mountpoint structure
+   from the original one. This allows you to have a different root for each
+   isolated process, as well as other mountpoints that are specific to those processes.
+
+3. CGroups defines what the container can do for example: limiting usage of CPU.
+
+4. clone- these system call create a new ("child") process, in a manner
+          similar to fork().
+          By contrast with fork(), these system call provide more precise
+          control over what pieces of execution context are shared between
+          the calling process and the child process.  For example, using
+          these system call, the caller can control whether or not the two
+          processes share the virtual address space, the table of file
+          descriptors, and the table of signal handlers.
+
+5. chroot- changes the root directory of the calling process to
+           that specified in path.  This directory will be used for
+           pathnames beginning with /.  The root directory is inherited by
+           all children of the calling process.
+
+6. procfs - The proc filesystem is a special filesystem in Unix-like operating
+           systems that presents information about processes and other system
+           information in a hierarchical file-like structure.
+           use of procfs- providing a more convenient and standardized
+           method for dynamically accessing process data held in the
+           kernel than traditional tracing methods or direct access to kernel memory.
+
+REMARKS:
+---
+
+
+
+
