@@ -1,0 +1,28 @@
+avi.kfir, galb1997
+Avraham Kfir(318251519), Gal Bronstein(318167632)
+EX: 1
+
+FILES:
+README
+Makefile - a makefile.
+graph.png - An image file with the graph of the results.
+osm.cpp - The code for assignment 2.
+
+
+ANSWERS:
+
+Assignment 1:
+First the command 'mkdir' creates a new directory with the name - "Welcome",
+then 'mkdir' command opens a sub-directory in "Welcome" that is called "To".
+After that, the command 'openat' creates a file inside directory "To" with 
+the name "OS2021".
+Then with the command 'fstat' we get the status of this file 
+(all the useful information related to the file).
+Next the command 'write' writes into the file: "galb1997 If you haven't 
+read the course guidlines yet --- do it now! 5" (5 - the argument we provided),
+then the file closes with the command 'close'.
+The command 'unlink' deletes the file and make the space it was using 
+available for reuse. 
+The command 'rmdir' removes the directory "To" and then again it removes the
+directory "Welcome".
+Finally the command - 'exit_group' exit all threads in a process.
