@@ -1,0 +1,55 @@
+avi.kfir, galb1997
+Avraham Kfir(318251519), Gal Bronstein(318167632)
+EX: 2
+
+FILES:
+README
+Makefile - a makefile.
+uthreads.h - User-Level Threads Library (uthreads).
+uthreads.cpp - Implementation of the user-Level Threads Library.
+Thread.h - Thread Class header.
+Thread.cpp - Implementation of the Thread Class.
+
+
+ANSWERS:
+
+1. User level threads is a reasonable choice because it's low in overhead 
+ (quick because there's no use of the OS) and we have controle of the switch.
+ Also it's good when we want to split our job into small pieces.
+For example merge-sort is good to implement with user-level thread. 
+
+2. 
+Advantages of a process: 
+- Protected from each other.
+- If one blocks, this does not affect the other processes.
+
+Disadvantages of a process: 
+- high overhead: each new tab demands a kernel trap and significant work
+(it is heavy weight activity).
+- There is no sharing between processes.
+
+3.
+After we entered the process name, an interrupt happened from the keyboard
+ to the OS telling it a key was pressed.
+After the KILL command, a trap was sent from the command line to the OS
+ telling it to end the process. Next the OS sent a killing signal
+ to the process according to its pid. The process ended.
+
+
+4. Virtual time (also called running time) is defined as the CPU time 
+required to complete a process (with no interruptions). 
+Real time - the real time that has passed in the system (including overhead).
+
+The schedualer can use a virtual time to determines how to move processes
+ and threads between the ready and run queues. Also can use the real time 
+to know how much time passed from the start to end.
+
+5.
+sigsetjmp() - saves "a bookmark": PC, SP, signal mask - if specified,
+ and rest of environment (CPU state) for later use by siglongjmp().
+return value: 0 if returning directly, otherwise a user-defined value if 
+we have just arrived using siglongjmp().
+
+siglongjmp() - Jumps to the code location and restore CPU state 
+specified by env.
+If the signal mask was saved in sigsetjmp, it will be also restored.
