@@ -1,0 +1,16 @@
+galb1997, avi.kfir
+Gal Bronstein (318167632), Avraham Kfir (318251519)
+EX: 4
+
+FILES:
+Makefile - Running make with no arguments should generate the 
+           libVirtualMemory.a library. 
+README file - The README should be structured according to the course guidelines. In
+              order to be compliant with the guidelines, please use the README template that we
+              provided.
+VirtualMemory.cpp - the implementation of VirtualMemory.h
+
+REMARKS:
+Virtual memory is a memory-management model that allows processes to use more memory 
+than is actually available on the host. 
+
