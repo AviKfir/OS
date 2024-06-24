@@ -1,6 +1,6 @@
 The exercises deal with the following topics:
 
-1. Introduction -- The role of an operating system -- Hardware support for the operating system
+1. The role of an operating system -- Hardware support for the operating system
 
 2. Performance evaluation -- The effect of workloads on operating systems performance -- basic notions in queuing analysis
 
