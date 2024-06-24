@@ -1,0 +1,21 @@
+galb1997, avi.kfir
+Gal Bronstein (318167632), Avraham Kfir (318251519)
+EX: 3
+
+FILES:
+Makefile - Running make with no arguments should generate the
+           libMapReduceFramework.a library.
+README file - The README should be structured according to the course guidelines. In
+              order to be compliant with the guidelines, please use the README template that we
+              provided.
+MapReduceFramework.cpp - The source files for our implementation of the library.
+Barrier.cpp - the implementation of Barrier.h
+Barrier.h - a synchronisation mechanism that makes sure no
+            thread continues before all threads arrived at the barrier.
+
+REMARKS:
+The framework will support running a MapReduce operations as an asynchrony job, together with
+ability to query the current state of a job while it is running.
+
+
+
